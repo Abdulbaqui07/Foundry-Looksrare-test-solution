@@ -270,48 +270,6 @@
         }
       }
     },
-    "lib/openzeppelin-contracts/contracts/interfaces/IERC20.sol": {
-      "lastModificationDate": 1672379707104,
-      "contentHash": "d151fbfe7939989b9acf22797b32058b",
-      "sourceName": "lib/openzeppelin-contracts/contracts/interfaces/IERC20.sol",
-      "solcConfig": {
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "metadata": {
-            "bytecodeHash": "ipfs",
-            "appendCBOR": true
-          },
-          "outputSelection": {
-            "*": {
-              "": [
-                "ast"
-              ],
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ]
-            }
-          },
-          "evmVersion": "london",
-          "libraries": {}
-        }
-      },
-      "imports": [
-        "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol"
-      ],
-      "versionRequirement": "^0.8.0",
-      "artifacts": {
-        "IERC20": {
-          "0.8.17+commit.8df45f5f.Darwin.appleclang": "IERC20.sol/IERC20.json"
-        }
-      }
-    },
     "lib/openzeppelin-contracts/contracts/interfaces/IERC721.sol": {
       "lastModificationDate": 1672379707105,
       "contentHash": "e6da7798a8c22c5043cc42d64a2a8f80",
@@ -1187,8 +1145,8 @@
       }
     },
     "src/Solution6.sol": {
-      "lastModificationDate": 1677861415929,
-      "contentHash": "6bcbb54a0720e3b1f1b1d1bb54efc00e",
+      "lastModificationDate": 1678086904289,
+      "contentHash": "69e69ba1b80343eb0532b1f811c379a0",
       "sourceName": "src/Solution6.sol",
       "solcConfig": {
         "settings": {
@@ -1218,11 +1176,7 @@
           "libraries": {}
         }
       },
-      "imports": [
-        "lib/openzeppelin-contracts/contracts/interfaces/IERC20.sol",
-        "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
-        "src/Question6.sol"
-      ],
+      "imports": [],
       "versionRequirement": "^0.8.13",
       "artifacts": {
         "Solution6": {
@@ -1459,8 +1413,8 @@
       }
     },
     "test/Questions.t.sol": {
-      "lastModificationDate": 1677861446923,
-      "contentHash": "3206b630854ea7035d528d490fdab76a",
+      "lastModificationDate": 1678087187040,
+      "contentHash": "e065a87e506609c82de16fc820192b44",
       "sourceName": "test/Questions.t.sol",
       "solcConfig": {
         "settings": {
@@ -1497,7 +1451,6 @@
         "lib/forge-std/src/Vm.sol",
         "lib/forge-std/src/console.sol",
         "lib/forge-std/src/console2.sol",
-        "lib/openzeppelin-contracts/contracts/interfaces/IERC20.sol",
         "lib/openzeppelin-contracts/contracts/interfaces/IERC721.sol",
         "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol",
         "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
